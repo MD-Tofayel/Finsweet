@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* =================common css============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+svg,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* =================common css============ */
+/* =================Nev css============ */
+
+.customNav {
+  background-color: #1c1e53;
+  padding: 16px 0;
+}
+
+.customNavItem {
+  /* color: #ffff; */
+  margin: 0 27px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding: 0 !important;
+}
+
+.customNavItem::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: aqua;
+  left: 0;
+  top: 0;
+  transition: all linear 0.5s;
+  opacity: 0;
+}
+
+.customNavItem:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.customNavItem::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  left: 0;
+  bottom: 0;
+  transition: all linear 0.5s;
+  opacity: 0;
+}
+
+.customNavItem:hover::after {
+  width: 0%;
+  opacity: 1;
+}
+
+.customNavItem:hover {
+  color: #ffff;
+}
+
+.btncustom {
+  border-radius: 41px;
+  border: none;
+  padding: 16px 49px;
+  border: 2px solid rgba(252, 252, 252, 0.2);
+  background-color: transparent;
+  color: #ffff;
+  margin-left: 90px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: all linear ease-in-out 0.5s;
+  z-index: 1;
+}
+
+.btncustom::after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 100%;
+  border-radius: 41px;
+  background-color: #ffab41;
+  left: 0;
+  top: 0;
+  transition: ease-in-out 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.btncustom:hover::after {
+  background-color: #018abd;
+  width: 100%;
+  opacity: 1;
+}
+
+/* =================Nev css============ */
+/* =================Baner css============ */
+
+#BanerPart {
+  padding: 146px 0;
+  background-color: #1c1e53;
+}
+
+.Baner__taitel {
+  color: #ffff;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 74px;
+  font-family: "Poppins", sans-serif;
+  opacity: 100%;
+}
+
+.Baner__sammare {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 70%;
+  font-family: "Poppins", sans-serif;
+  padding-top: 24px;
+}
+
+.BanerBtn {
+  margin-top: 48px;
+  border: none;
+  padding: 16px 56px;
+  border-radius: 41px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  text-wrap: nowrap;
+  position: relative;
+  transition: all linear ease-in-out 0.5s;
+  z-index: 1;
+}
+
+.BanerBtn::after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 100%;
+  border-radius: 41px;
+  background-color: #ffab41;
+  left: 0;
+  top: 0;
+  transition: ease-in-out 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.BanerBtn:hover::after {
+  background-color: #018abd;
+  width: 100%;
+  opacity: 1;
+  color: #ffff;
+}
+
+.view {
+  margin-top: 48px;
+  padding: 16px 56px;
+  align-items: center;
+  color: blue;
+  justify-content: center;
+}
+
+.view:hover {
+  color: #ffff;
+}
+
+/* =================Baner css============ */
+/* =================wrak css============ */
+
+#WrakPart {
+  padding: 128px 0;
+  background-color: #f4f6fc;
+}
+
+.Wrakpart__taitel {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 64px;
+  /* text-align: left; */
+  text-wrap: nowrap;
+}
+
+.Wrakpart__summary {
+  padding: 16px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* text-align: left; */
+  opacity: 70%;
+}
+
+.WrakHisturi {
+  padding: 16px 0 8px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #282938;
+  font-family: "Poppins", sans-serif;
+}
+
+.WrakHisturi__summari {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #282938;
+  opacity: 70%;
+  margin-bottom: 48px;
+}
+
+/* =================wrak css============ */
+/* =================Project css============ */
+
+.ProjectPart {
+  margin: 96px 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Project__baner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgholder {
+  overflow: hidden;
+}
+
+.ovarlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  background-image: linear-gradient(329.39deg,
+      #1c1e53 -10.96%,
+      rgba(28, 30, 83, 0.42) 103.96%);
+  transition: all linear 0.3s;
+}
+
+.ovarlay__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: flex-end;
+  padding-left: 48px;
+  height: 100%;
+  padding-top: 312px;
+  padding-bottom: 76px;
+  color: #ffff;
+  position: absolute;
+}
+
+.imgholder:hover .ovarlay {
+  left: 0;
+}
+
+.ovarlay__modifire {
+  /* position: relative; */
+  width: 100%;
+  padding: 129px 36px 45px 56px;
+}
+
+/* =================Project css============ */
+#abute{
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.card-title {
+  /* font-family: Poppins; */
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+
+}
