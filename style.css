@@ -325,3 +325,31 @@ body {
   text-align: left;
 
 }
+
+/* =======================Features================= */
+
+#features{
+  margin: 128px 0 15px;
+}
+
+.Features{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.taitl{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  font-family: "Poppins", sans-serif;
+  width: 630px;
+  height: 192px;
+  text-align: center;
+  justify-content: center;
+  
+}
+/* =======================Features================= */
